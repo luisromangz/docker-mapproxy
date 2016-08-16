@@ -23,8 +23,10 @@ RUN apt-get install -y \
     libjpeg-dev \
     zlib1g-dev \
     libfreetype6-dev \
-    python-virtualenv
-RUN pip install Shapely Pillow MapProxy uwsgi
+    python-virtualenv \
+    unzip
+
+RUN pip install shapely pillow mapnik mapproxy uwsgi
 
 EXPOSE 8080
 
