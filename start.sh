@@ -16,10 +16,11 @@ then
 fi
 
 unzip mapproxy.zip
+ls mapproxy
 
-unzip datasets.zip -d datasets
-ls -lah  datasets
+unzip datasets.zip -d mapproxy/datasets
+ls -lah  mapproxy/datasets
 
 #mapproxy-util create -t wsgi-app -f mapproxy.yaml app.py
 #uwsgi --ini /uwsgi.conf
-mapproxy-util serve-develop -b :8080 mapproxy.yaml
+mapproxy-util serve-develop -b :8080 mapproxy/mapproxy.yaml
