@@ -15,8 +15,9 @@ then
     exit 1
 fi
 
-unzip mapproxy.zip
+unzip mapproxy.zip -d mapproxy
 ls mapproxy
+cat mapproxy/mapproxy.yaml
 
 unzip datasets.zip -d mapproxy/datasets
 ls -lah  mapproxy/datasets
