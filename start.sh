@@ -6,11 +6,12 @@ curl $DATASETS_URL > datasets.zip
 
 if [ ! -e "mapproxy.zip" ];
 then
+    echo "No mapproxy.zip file exiting"
     exit 1
 fi
 
 if [ ! -e "datasets.zip" ];
-then 
+then
     echo "No Datasets file exiting..."
     exit 1
 fi
